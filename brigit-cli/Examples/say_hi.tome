@@ -1,0 +1,13 @@
+@player{
+	Hello friends!*->{
+		Yulia{ Heyo!* }
+	}
+	Hi*->{
+		James{ How's it going* }
+	}
+	....*->{
+		Kanna{ Not much of a talker?* }
+	}
+}
+
+Anthony{ HellloOOOooOooOOOO* }
