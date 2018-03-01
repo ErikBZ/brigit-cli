@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using ManyConsole;
+using Brigit;
 
 namespace brigit_cli
 {
@@ -22,7 +23,22 @@ namespace brigit_cli
 
 		public override int Run(string[] remainingArguments)
 		{
-			throw new NotImplementedException();
+			try
+			{
+				var pathToFile = Path.Combine(Directory.GetCurrentDirectory(), FileName);
+				// does not need to save anything just needs to parse it
+				ConversationLoader.CreateConversation(pathToFile);
+				Console.Out.WriteLine(FileName + " parsed correctly.");
+				return 0;
+			}
+			catch (Exception ex)
+			{
+				// change this with some better exception handling
+				Console.Error.WriteLine(ex.Message);
+				Console.Error.WriteLine(ex.StackTrace);
+
+				return 1;
+			}
 		}
 	}
 }
