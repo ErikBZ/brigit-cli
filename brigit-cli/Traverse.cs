@@ -27,10 +27,11 @@ namespace brigit_cli
 
 				// wait for input
 				string input = Console.ReadLine();
-				bool parsed = int.TryParse(input, out int num);
+				int choice = 0;
+				bool parsed = int.TryParse(input, out choice);
 
 				// move to next
-				Next(parsed, num, info);
+				Next(parsed, choice, info);
 			}
 		}
 
