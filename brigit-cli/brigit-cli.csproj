@@ -32,8 +32,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Brigit">
-      <HintPath>..\..\..\..\brigit\Brigit\bin\Debug\Brigit.dll</HintPath>
+    <Reference Include="Brigit, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Brigit.0.1.0\lib\net35\Brigit.dll</HintPath>
     </Reference>
     <Reference Include="ManyConsole, Version=1.0.0.3, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\ManyConsole.1.0.0.3\lib\ManyConsole.dll</HintPath>
